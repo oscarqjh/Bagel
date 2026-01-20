@@ -41,3 +41,7 @@ dependencies = [
 # 只打包 bagel 这个顶层包，里面会自动包含 data/modeling/eval/train
 [tool.setuptools]
 packages = ["bagel"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bagel*"]
